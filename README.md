@@ -1,8 +1,9 @@
 # unlimited-ai
-Provides unlimited AI answers for Node.js.
+Provides unlimited AI answers for Node.js.<br>
+Powered by [Voids API](https://voids.top/).
 
 ## Usage
-### ai.generate(model, messages, raw): promise
+### .generate(model, messages, raw): promise<string | object>
 Return string of AI answers (if raw is true, return object).
 ```js
 // Example
@@ -18,6 +19,7 @@ const ai = require('unlimited-ai');
   console.log(await ai.generate(model, messages)); // 'Hello there! How can I be of assistance to you today?'
 })();
 ```
+
 #### model: string
 Available models: ai.models
 
@@ -30,12 +32,15 @@ Available models: ai.models
 
 #### raw: boolean (default: false)
 
-### ai.models
+### .models
 Return array of available models.
 
-### ai.allModels(): promise
-Return array of all models.
-*This function has been deprecated.
+### .allModels(): promise<array>
+Return array of all models.<br>
+*This function is deprecated.
 
-### ai.config: object
+### .config: object
 Return URLs.
+
+## Get Support
+<a href="https://discord.gg/yKW8wWKCnS"><img src="https://discordapp.com/api/guilds/1005287561582878800/widget.png?style=banner4" alt="Discord Banner"/></a>

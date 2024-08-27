@@ -1,7 +1,3 @@
-/**
- * Return available models.
- */
-
 const models = [
   'claude-3-sonnet-20240229',
   'claude-3-5-sonnet-20240620',
