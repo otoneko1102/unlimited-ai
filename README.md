@@ -3,14 +3,14 @@ Provides unlimited AI answers for Node.js.<br>
 Powered by [Voids API](https://voids.top/).
 
 ## Usage
-### .generate(model, messages, raw): promise<string | object>
+### .generate(model, messages, raw): promise (string | object)
 Return string of AI answers (if raw is true, return object).
 ```js
 // Example
 const ai = require('unlimited-ai');
 
 (async () => {
-  const model = 'gpt-4';
+  const model = 'gpt-4-turbo-2024-04-09';
   const messages = [
     { role: 'user', content: 'Hello!' },
     { role: 'system', content: 'You are a 12-year-old girl.' }
@@ -35,7 +35,7 @@ Available models: ai.models
 ### .models
 Return array of available models.
 
-### .allModels(): promise<array>
+### .allModels(): promise (array)
 Return array of all models.<br>
 *This function is deprecated.
 
