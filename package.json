@@ -43,6 +43,5 @@
   "homepage": "https://github.com/otoneko1102/unlimited-ai#readme",
   "dependencies": {
     "axios": "^1.7.5"
-  },
-  "devDependencies": {}
+  }
 }
