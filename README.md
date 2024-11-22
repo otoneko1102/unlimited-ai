@@ -3,8 +3,8 @@ Provides unlimited AI answers for Node.js.<br>
 Powered by [Voids API](https://voids.top/).
 
 ###### Teams
-<a href="https://oto.pet/"><img src="https://www.otoneko.cat/img/logo.png" alt="OTONEKO.CAT" style="display: block; width: 200px; height: 200px;"/></a>
-<a href="https://www.otoho.me/"><img src="https://www.otoho.me/img/logo.png" alt="Oto Home" style="display: block; width: 200px; height: 200px;"/></a>
+<a href="https://oto.pet/"><img src="https://www.otoneko.cat/img/logo.png" alt="OTONEKO.CAT" style="display: block; width: auto; height: 150px;"/></a>
+<a href="https://www.otoho.me/"><img src="https://www.otoho.me/img/logo.png" alt="Oto Home" style="display: block; width: 150px; height: 150px;"/></a>
 
 ## Usage
 ### .generate(model, messages, raw): promise (string | object)
