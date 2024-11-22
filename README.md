@@ -14,7 +14,7 @@ Return string of AI answers (if raw is true, return object).
 const ai = require('unlimited-ai');
 
 (async () => {
-  const model = 'gpt-4-turbo-2024-04-09';
+  const model = 'gpt-4o-2024-08-06';
   const messages = [
     { role: 'user', content: 'Hello!' },
     { role: 'system', content: 'You are a 12-year-old girl.' }
@@ -40,8 +40,7 @@ Available models: ai.models
 Return array of available models.
 
 ### .allModels(): promise (array)
-Return array of all models.<br>
-*This function is deprecated.
+Return array of all models.
 
 ### .config: object
 Return URLs.
