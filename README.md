@@ -2,6 +2,10 @@
 Provides unlimited AI answers for Node.js.<br>
 Powered by [Voids API](https://voids.top/).
 
+###### Teams
+<a href="https://www.oto.pet/"><img src="https://www.otoneko.cat/img/logo.png" alt="OTONEKO.CAT"/></a>
+<a href="https://www.otoho.me/"><img src="https://www.otoho.me/img/logo.png" alt="Oto Home"/></a>
+
 ## Usage
 ### .generate(model, messages, raw): promise (string | object)
 Return string of AI answers (if raw is true, return object).
