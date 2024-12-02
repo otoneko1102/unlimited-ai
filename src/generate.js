@@ -6,7 +6,8 @@ const allModels = require('../src/allModels');
 async function generate(model, messages, raw = false) {
   if (typeof model !== 'string') throw new Error('TypeError: model must be string.');
   if (typeof messages !== 'object') throw new Error('TypeError: messages must be object.');
-  
+  if (typeof raw !== 'boolean') throw new Error('TypeError: raw must be boolean.');
+
   try {
     const models = await allModels();
     if (!models.includes(model)) throw new Error('ModelError: model is invalid.');

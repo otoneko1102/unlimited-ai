@@ -1,16 +1,24 @@
-const models = [
-  'gpt-4o-mini',
-  'o1-preview',
-  'o1-mini',
-  'gpt-4o-2024-08-06',
-  'claude-3-sonnet-20240229',
-  'claude-3-5-sonnet-20240620',
-  'gemini-1.5-flash-exp-0827'
-];
+const axios = require('axios');
+const { AVAILABLE_MODELS_URL } = require('../lib/config');
+
+async function models(raw = false) {
+  if (typeof raw !== 'boolean') throw new Error('TypeError: raw must be boolean.');
+
+  try {
+    const response = await axios.get(AVAILABLE_MODELS_URL);
+    if (response.status >= 200 && response.status < 300) {
+      if (raw) {
+        return response.data;
+      } else {
+        return response.data.data;
+      }
+    } else {
+      throw new Error(`Request failed with status code: ${response.status}`);
+    }
+  } catch (error) {
+    console.error('Error fetching models:', error.message);
+    throw error;
+  }
+}
 
 module.exports = models;
-
-const axios = require('axios');
-async function models() {
-
-}
