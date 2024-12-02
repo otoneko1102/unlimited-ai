@@ -3,15 +3,16 @@ declare module 'unlimited-ai' {
     model: string,
     messages: object,
     raw?: boolean
-  ): Promise<string | any>;
+  ): Promise<string | object>;
 
-  export const models: string[];
+  export function models(): Promise<string[]>;
 
   export function allModels(): Promise<string[]>;
 
   export const config: {
     API_URL: string;
     MODELS_URL: string;
+    AVAILABLE_MODELS_URL: string;
     [key: string]: any;
   };
 }
