@@ -1,3 +1,6 @@
+// The model name in this example may be out of date.
+// Please check with .models() or .allModels() for the latest information.
+
 const ai = require('../index');
 
 (async () => {

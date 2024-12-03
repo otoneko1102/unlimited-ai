@@ -2,6 +2,8 @@
 Provides unlimited AI answers for Node.js.<br>
 Powered by [Voids API](https://voids.top/).
 
+> Note: The Voids API is not owned or operated by the developer of this package, so please do not contact us through GitHub Issues or other such inquiries about the API being down.
+
 ###### Teams
 <a href="https://oto.pet/"><img src="https://www.otoneko.cat/img/logo.png" alt="OTONEKO.CAT" style="display: block; width: auto; height: 100px;"/></a>
 <a href="https://www.otoho.me/"><img src="https://www.otoho.me/img/logo.png" alt="Oto Home" style="display: block; width: auto; height: 100px;"/></a>
@@ -11,10 +13,13 @@ Powered by [Voids API](https://voids.top/).
 Return string of AI answers (if raw is true, return object).
 ```js
 // Example
+// The model name in this example may be out of date.
+// Please check with .models() or .allModels() for the latest information.
+
 const ai = require('unlimited-ai');
 
 (async () => {
-  const model = 'gpt-4o-2024-08-06';
+  const model = 'gpt-4-turbo-2024-04-09';
   const messages = [
     { role: 'user', content: 'Hello!' },
     { role: 'system', content: 'You are a 12-year-old girl.' }
@@ -34,9 +39,9 @@ Available models: ai.models
 | user | Used to identify user messages. |
 | assistant |Used to identify AI messages. |
 
-#### raw: boolean (default: false)
+#### raw?: boolean (default: false)
 
-### .models
+### .models(): promise (array)
 Return array of available models.
 
 ### .allModels(): promise (array)
@@ -44,6 +49,16 @@ Return array of all models.
 
 ### .config: object
 Return URLs.
+
+## Change Log
+### 0.x --> 1.0.0
+Package released!
+### 1.x --> 2.0.0
+TypeScript supported!
+### 2.x --> 3.0.0
+Developers and development groups have been listed. Features have been optimized.
+### 3.x --> 4.0.0
+`.models` is no longer supported and has been replaced by `.models()`.
 
 ## Get Support
 <a href="https://discord.gg/yKW8wWKCnS"><img src="https://discordapp.com/api/guilds/1005287561582878800/widget.png?style=banner4" alt="Discord Banner"/></a>

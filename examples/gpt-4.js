@@ -1,7 +1,10 @@
+// The model name in this example may be out of date.
+// Please check with .models() or .allModels() for the latest information.
+
 const ai = require('../index');
 
 (async () => {
-  const model = 'gpt-4o-2024-08-06';
+  const model = 'gpt-4-turbo-2024-04-09';
   const messages = [
     { role: 'user', content: 'Hello!' },
     { role: 'system', content: 'You are a 12-year-old girl.' }
