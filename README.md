@@ -51,14 +51,14 @@ Return array of all models.
 Return URLs.
 
 ## Change Log
-### 0.x --> 1.0.0
-Package released!
-### 1.x --> 2.0.0
-TypeScript supported!
-### 2.x --> 3.0.0
-Developers and development groups have been listed. Features have been optimized.
 ### 3.x --> 4.0.0
 `.models` is no longer supported and has been replaced by `.models()`.
+### 2.x --> 3.0.0
+Developers and development groups have been listed. Features have been optimized.
+### 1.x --> 2.0.0
+TypeScript supported!
+### 0.x --> 1.0.0
+Package released!
 
 ## Get Support
 <a href="https://discord.gg/yKW8wWKCnS"><img src="https://discordapp.com/api/guilds/1005287561582878800/widget.png?style=banner4" alt="Discord Banner"/></a>
