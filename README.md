@@ -9,7 +9,11 @@ Powered by [Voids API](https://voids.top/).
 <a href="https://www.otoho.me/"><img src="https://www.otoho.me/img/logo.png" alt="Oto Home" style="display: block; width: auto; height: 100px;"/></a>
 
 ## Usage
-### .generate(model, messages, raw): promise (string | object)
+- Example (gemini): [gemini.js](https://github.com/otoneko1102/unlimited-ai/tree/main/examples/gemini.js)
+- Example (gpt): [gpt-4.js](https://github.com/otoneko1102/unlimited-ai/tree/main/examples/gpt-4.js)
+- Example with search: [with-search.js](https://github.com/otoneko1102/unlimited-ai/tree/main/examples/with-search.js)
+
+### .generate(model, messages, raw): Promise\<string | object\>
 Return string of AI answers (if raw is true, return object).
 ```js
 // Example
@@ -30,7 +34,7 @@ const ai = require('unlimited-ai');
 ```
 
 #### model: string
-Available models: ai.models
+Available models: ai.models()
 
 #### messages: array
 | role	| description |
@@ -41,16 +45,27 @@ Available models: ai.models
 
 #### raw?: boolean (default: false)
 
-### .models(): promise (array)
+### .models(): Promise\<string[]\>
 Return array of available models.
 
-### .allModels(): promise (array)
+### .allModels(): Promise\<string[]\>
 Return array of all models.
+
+### .searchModels(word, all): Promise\<string[]\>
+Search models.
+
+#### word: string
+Search keywords.
+
+#### all?: boolean (default: false)
+Search from all or available.
 
 ### .config: object
 Return URLs.
 
 ## Change Log
+### 4.x --> 5.0.0
+Model search function added.
 ### 3.x --> 4.0.0
 `.models` is no longer supported and has been replaced by `.models()`.
 ### 2.x --> 3.0.0
