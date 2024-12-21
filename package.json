@@ -1,6 +1,6 @@
 {
   "name": "unlimited-ai",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "description": "Provides unlimited AI answers for Node.js.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -43,7 +43,7 @@
   "homepage": "https://github.com/otoneko1102/unlimited-ai#readme",
   "dependencies": {
     "axios": "^1.7.9",
-    "closewords": "^2.0.0"
+    "closewords": "^2.1.1"
   },
   "devDependencies": {
     "fs-extra": "^11.2.0"
