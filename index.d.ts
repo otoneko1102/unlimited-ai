@@ -25,12 +25,12 @@ declare module 'unlimited-ai' {
 
     /**
      * @function setModel
-     * @param {string} model 
-     * @param {boolean?} search 
-     * @param {boolean?} all 
+     * @param {string} model - Set model.
+     * @param {boolean?} search - Search models.
+     * @param {boolean?} all - Search all models.
      * @returns {AI} Returns the instance of AI for chaining.
      */
-    setModel(model: string): AI;
+    setModel(model: string, search?: boolean, all?: boolean): AI;
 
     /**
      * @function setMessages

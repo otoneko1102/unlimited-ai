@@ -18,7 +18,7 @@ Powered by [Voids API](https://voids.top/).
   #### setModel(model: string, search?: boolean, all?: boolean): AI
   #### setMessages(messages: Array\<{ role: string, content: string }\>): AI
   #### addMessage(message: { role: string, content: string }): AI
-  #### remove(index: Integer): AI
+  #### removeMessage(index: Integer): AI
   #### generate(raw?: boolean): Promise\<string | object\>
   #### getFormat(): { model?: string, messages?: Array\<{ role: string, content: string }\> }
 

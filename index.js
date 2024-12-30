@@ -75,9 +75,9 @@ class AI {
 
   /**
    * @function setModel
-   * @param {string} model 
-   * @param {boolean?} search 
-   * @param {boolean?} all 
+   * @param {string} model - Set model.
+   * @param {boolean?} search - Search models.
+   * @param {boolean?} all - Search all models.
    * @returns {AI} Returns the instance of AI for chaining.
    */
   setModel(model, search, all) {
