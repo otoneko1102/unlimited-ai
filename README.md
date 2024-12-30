@@ -9,9 +9,36 @@ Powered by [Voids API](https://voids.top/).
 <a href="https://www.otoho.me/"><img src="https://www.otoho.me/img/logo.png" alt="Oto Home" style="display: block; width: auto; height: 100px;"/></a>
 
 ## Usage
+- Example with class: [class.js](https://github.com/otoneko1102/unlimited-ai/tree/main/examples/class.js)
 - Example (gemini): [gemini.js](https://github.com/otoneko1102/unlimited-ai/tree/main/examples/gemini.js)
 - Example (gpt): [gpt-4.js](https://github.com/otoneko1102/unlimited-ai/tree/main/examples/gpt-4.js)
 - Example with search: [with-search.js](https://github.com/otoneko1102/unlimited-ai/tree/main/examples/with-search.js)
+
+### AI(format?: { model?: string, messages?: Array\<{ role: string, content: string }\> })
+  #### setModel(model: string, search?: boolean, all?: boolean): AI
+  #### setMessages(messages: Array\<{ role: string, content: string }\>): AI
+  #### addMessage(message: { role: string, content: string }): AI
+  #### remove(index: Integer): AI
+  #### generate(raw?: boolean): Promise\<string | object\>
+  #### getFormat(): { model?: string, messages?: Array\<{ role: string, content: string }\> }
+
+```js
+// Example
+// The model name in this example may be out of date.
+// Please check with .models() or .allModels() for the latest information.
+
+const { AI } = require('unlimited-ai');
+
+(async () => {
+  const ai = new AI();
+  ai
+    .setModel('gpt-4-turbo-2024-04-09')
+    .addMessage({ role: 'user', content: 'Hello!' })
+    .addMesssage({ role: 'system', content: 'You are a 12-year-old girl.' })
+
+  console.log(await ai.generate()); // 'Hello there! How can I be of assistance to you today?'
+})();
+```
 
 ### .generate(model, messages, raw): Promise\<string | object\>
 Return string of AI answers (if raw is true, return object).
@@ -64,6 +91,8 @@ Search from all or available.
 Return URLs.
 
 ## Change Log
+### 5.x --> 6.0.0
+Class has been added.
 ### 4.x --> 5.0.0
 Model search function added.
 ### 3.x --> 4.0.0

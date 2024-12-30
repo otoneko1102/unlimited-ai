@@ -1,6 +1,7 @@
 const { closeWords } = require('closewords');
 const allModels = require('../src/allModels');
 const models = require('../src/models');
+
 /**
  * Generates a response based on the given model and messages.
  *
@@ -12,8 +13,8 @@ const models = require('../src/models');
  * @throws {TypeError} If the arguments are not of the expected types.
  */
 async function searchModels(word, all = true) {
-  if (typeof word !== 'string') throw new Error('word must be string.');
-  if (typeof all !== 'boolean') throw new Error('all must be boolean.');
+  if (typeof word !== 'string') throw new TypeError('word must be a string.');
+  if (typeof all !== 'boolean') throw new TypeError('all must be a boolean.');
 
   const data = all ? await allModels() : await models();
   const result = await closeWords(word, data);

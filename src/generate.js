@@ -9,16 +9,29 @@ const allModels = require('../src/allModels');
  * @async
  * @function
  * @param {string} model - The model to use for generation.
- * @param {object} messages - The input messages to send to the API.
- * @param {boolean} [raw=false] - If true, returns the raw response from the API.
+ * @param {Array<{ role: 'system'|'user'|'assistant', content: string }>} messages - The input messages to send to the API.
+ * @param {boolean?} [raw=false] - If true, returns the raw response from the API.
  * @returns {Promise<string|object>} A promise that resolves to the generated response or raw data.
  * @throws {TypeError} If the arguments are not of the expected types.
  * @throws {Error} If the model is invalid or the API request fails.
  */
 async function generate(model, messages, raw = false) {
-  if (typeof model !== 'string') throw new Error('TypeError: model must be string.');
-  if (typeof messages !== 'object') throw new Error('TypeError: messages must be object.');
-  if (typeof raw !== 'boolean') throw new Error('TypeError: raw must be boolean.');
+  if (typeof model !== 'string') throw new TypeError('model must be a string.');
+  if (
+    !Array.isArray(messages) ||
+    !messages.every(
+      (msg) =>
+        typeof msg === 'object' &&
+        msg !== null &&
+        ['system', 'user', 'assistant'].includes(msg.role) &&
+        typeof msg.content === 'string'
+    )
+  ) {
+    throw new TypeError(
+      'messages must be an array of objects with { role: "system"|"user"|"assistant", content: string }.'
+    );
+  }
+  if (typeof raw !== 'boolean') throw new TypeError(' a boolean.');
 
   try {
     const models = await allModels();

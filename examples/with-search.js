@@ -1,4 +1,4 @@
-const ai = require('../index');
+const ai = require('unlimited-ai');
 
 (async () => {
   const model = (await ai.searchModels('gpt'))[0];

@@ -6,7 +6,7 @@ const { AVAILABLE_MODELS_URL } = require('../lib/config');
  *
  * @async
  * @function
- * @returns {Promise<object[]>} A promise that resolves to an array of model objects.
+ * @returns {Promise<string[]>} A promise that resolves to an array of model objects.
  * @throws {Error} If the request fails or the server returns a non-2xx status code.
  */
 async function models() {
