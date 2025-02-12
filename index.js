@@ -53,9 +53,7 @@ class AI {
             ) {
               this.format[key] = value;
             } else {
-              throw new TypeError(
-                `${key} must be an array of objects with { role: 'system'|'user'|'assistant', content: string }.`
-              );
+              throw new TypeError(`${key} must be an array of objects with { role: 'system'|'user'|'assistant', content: string }.`);
             }
             break;
           case 'raw':

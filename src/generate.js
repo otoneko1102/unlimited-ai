@@ -27,9 +27,7 @@ async function generate(model, messages, raw = false) {
         typeof msg.content === 'string'
     )
   ) {
-    throw new TypeError(
-      'messages must be an array of objects with { role: "system"|"user"|"assistant", content: string }.'
-    );
+    throw new TypeError('messages must be an array of objects with { role: "system"|"user"|"assistant", content: string }.');
   }
   if (typeof raw !== 'boolean') throw new TypeError(' a boolean.');
 
