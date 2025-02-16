@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739326001679,
+  "lastUpdate": 1739664158614,
   "data": [
     "gpt-4o-mini-free",
     "gpt-4o-mini",
@@ -9,6 +9,10 @@
     "gpt-4o-2024-08-06",
     "grok-2",
     "grok-2-mini",
-    "claude-3-5-sonnet-20241022-t"
+    "claude-3-opus-20240229",
+    "claude-3-sonnet-20240229",
+    "claude-3-5-sonnet-20241022",
+    "claude-3-5-sonnet-20241022-t",
+    "claude-3-haiku-20240307"
   ]
 }
