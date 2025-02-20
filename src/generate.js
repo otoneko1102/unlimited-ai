@@ -1,8 +1,6 @@
 const axios = require('axios');
 const { API_URL } = require('../lib/config');
 
-const allModels = require('../src/allModels');
-
 /**
  * Generates a response based on the given model and messages.
  *
@@ -32,9 +30,6 @@ async function generate(model, messages, raw = false) {
   if (typeof raw !== 'boolean') throw new TypeError(' a boolean.');
 
   try {
-    const models = await allModels();
-    if (!models.includes(model)) throw new Error('ModelError: model is invalid.');
-
     const response = await axios.post(API_URL, { model, messages });
     if (response.status >= 200 && response.status < 300) {
       if (raw) {

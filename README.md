@@ -2,6 +2,10 @@
 Provides unlimited AI answers for Node.js.<br>
 Powered by [Voids API](https://voids.top/).
 
+> ⚠ At the request of the Voids API owner, the specifications of some functions have been changed. ⚠
+
+> ⚠ The Voids API owner has stated that an API key will be required in the future. ⚠
+
 > Note: The Voids API is not owned or operated by the developer of this package, so please do not contact us through GitHub Issues or other such inquiries about the API being down.
 
 ###### Teams
