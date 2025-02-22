@@ -1,6 +1,6 @@
 {
   "name": "unlimited-ai",
-  "version": "6.1.0",
+  "version": "6.2.0-dev.0",
   "description": "Provides unlimited AI answers for Node.js.",
   "main": "index.js",
   "types": "index.d.ts",
