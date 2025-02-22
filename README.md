@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/unlimited-ai.svg)](https://badge.fury.io/js/unlimited-ai)
+![npm version](https://badge.fury.io/js/unlimited-ai.svg) ![npm downloads](https://img.shields.io/npm/d18m/unlimited-ai.svg?maxAge=3600) ![last commit](https://img.shields.io/github/last-commit/otoneko1102/unlimited-ai) ![commit actvity](https://img.shields.io/github/commit-activity/w/otoneko1102/unlimited-ai) ![code size](https://img.shields.io/github/languages/code-size/otoneko1102/unlimited-ai)
 <br>
 [![NPM](https://nodei.co/npm/unlimited-ai.png)](https://nodei.co/npm/unlimited-ai/)
 # unlimited-ai
