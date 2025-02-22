@@ -1,4 +1,5 @@
 [![npm version](https://badge.fury.io/js/unlimited-ai.svg)](https://badge.fury.io/js/unlimited-ai)
+<br>
 [![NPM](https://nodei.co/npm/unlimited-ai.png)](https://nodei.co/npm/unlimited-ai/)
 # unlimited-ai
 Provides unlimited AI answers for Node.js.<br>
